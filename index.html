@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Thermostat</title>
+</head>
+<body>
+
+  <div id="temperaturedisplayer"></div>
+
+  <div id="controllers">
+    <button class='controllerbutton'>Up</button>
+    <button class='controllerbutton'>Down</button>
+    <button class='controllerbutton'>RESET</button>
+  </div>
+
+  <div id="powersavercheckboxdiv">
+    <form>
+      <label for="checkbox">Power Saving Mode</label>
+      <input name="checkbox" type="checkbox" id="power_save_check_box" checked>
+    </form>
+  </div>
+
+  <div id="temperature_displayer">
+    The temperature of <label id="city_temperature_displayed"></label>
+    is <label id="temperature_displayed"></label>
+  </div>
+
+  <div id="citysearcherdiv">
+      <label>Choose a city</label>
+      <input type="text" id="chosen_city">
+      <input type="submit" value="Search" id="submit_chosen_city">
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="src/getTempApi.js"></script>
+  <script src="src/Geolocation.js"></script>
+  <script src="src/Thermostat.js"></script>
+  <script src="src/ThermostatController.js"></script>
+
+</body>
+</html>
